@@ -1,0 +1,169 @@
+/*
+ * CSS styles for the working version of the Fortis Wildfire Risk Webmap
+*/
+
+html,
+body,
+#body {
+padding: 0;
+margin: 0;
+height: 100%;
+width: 100%;
+}
+#viewDiv {
+float: left;
+padding: 0;
+margin: 0;
+height: 100%;
+width: 80%;
+}
+
+#side-pane {
+float: left;
+width: 20%;
+height: 100%;
+padding: 1em;
+}
+#legendDiv{
+position: absolute;
+width: 92px;
+left: 0px;
+top: 380px;		
+}
+#text-box1{
+position: absolute;
+width: 92px;
+left: 50px;
+top: 120px;	
+}
+#text-box2{
+position: absolute;
+width: 92px;
+left: 50px;
+top: 220px;	
+}
+#text1{
+    font-size: 10pt;
+    font-weight: bold;	
+}
+#text2{
+    font-size: 10pt;
+    font-weight: bold;			
+}
+.esri-ui-manual-container{
+    left:58px;
+	top:60px;
+    }
+#currentDiv{
+	position: absolute;
+	width: 92px;
+	left:130px;
+	top: 140px;
+}
+
+#futureDiv{
+	position: absolute;
+	width: 92px;
+	left:130px;
+	top: 240px;
+}
+  .pane-button {
+	font-size: 27px;
+	background-color: white;
+	border: 1px solid #d3d3d3;
+	color: black;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+  .pane-button:hover,
+  .pane-button:focus {
+	background: #0079c1;
+	color: #e4e4e4;
+  }
+
+  .active {
+	background: #0079c1;
+	color: #e4e4e4;
+      }	
+#maptitleDiv{
+	position: absolute;
+	left: 34px;
+	top: 18px;
+}
+#maptitleText{
+	padding: 3px;
+    font-size: 25pt;
+    font-weight: bold;
+    margin: 0px;
+    color: black;
+}
+#msgDiv{
+	position: absolute;
+	left: 50px;
+	top: 80px;
+
+}
+#infoText{
+	padding: 3px;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0px;
+    background-color: #515151;
+    color: white;
+}
+#locationDiv {
+        background: #808080;
+        padding: 0px;
+		opacity: 1;
+		position: absolute;
+		left: 440px;;
+		top: 15px;
+      }
+#topbar{
+	padding: 20px;
+	position: absolute;
+	height: 200px;
+	left: -20px;
+	top: 60px;
+  }
+  .action-button {
+	font-size: 18px;
+	background-color: white;
+	border: 1px solid #d3d3d3;
+	color: black;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+  .action-button:hover,
+  .action-button:focus {
+	background: #0079c1;
+	color: #e4e4e4;
+  }
+
+  .active {
+	background: #0079c1;
+	color: #e4e4e4;
+      }
+
+.esri-icon-non-visible::before {
+content: "\e610";
+}
+.esri-icon-visible::before {
+content: "\e611";
+}
+
+.btnWidget .text{
+    position: absolute;
+    font-weight: bold;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 5px; 
+    visibility:hidden;
+}
+
+

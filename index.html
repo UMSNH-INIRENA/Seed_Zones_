@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+HTML structure 
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://js.arcgis.com/4.13/esri/themes/light/main.css"
+            >
+        <link rel="stylesheet" href="css/styles_working.css">
+        <script src="https://js.arcgis.com/4.13/"></script>
+        <script src="scripts/requireMain.js"></script>		
+    </head>    
+    <body>
+	<div id="side-pane" class="esri-widget">
+	<div id ='text-box1'><p id = 'text1'> I have Seed. Click on this arrow.</p></div>
+	<div id ='text-box2'><p id = 'text2'> I want to establish a plantation. Click on this arrow.</p></div>
+	</div>
+    <div id="viewDiv"></div>
+    <div id="titleDiv" class="esri-widget">
+      <div id="titleText"></div>
+    </div>        
+		
+<!--		
+		<div id="titleDiv"><div id = "titleText">Seedlot Selection Tool</div></div>	
+        <div id="viewDiv"></div>
+		<div id="feature-node" class="esri-widget"></div>
+-->
+	<div id ="currentDiv">
+		  <button
+			class="pane-button esri-icon-cursor"
+			id="searchFutureButton"
+			type="button"
+			title="Click on your seed source location to see where you can plant it"
+		  ></button> 
+	</div>	
+	<div id ="futureDiv">
+		  <button
+			class="pane-button esri-icon-cursor-filled"
+			id="searchCurrentButton"
+			type="button"
+			title="Click on your plantation location to see where you can get seed"
+		  ></button> 
+	</div>
+	<div id ="maptitleDiv"><p id = "maptitleText"><H2>Seedlot Selection Tool</H2> </div>	
+	<div id ="msgDiv"><p id = "infoText">Gridcode</p> </div>		
+	<div id ="locationDiv"> </div>
+	<div id ="locatorDiv"> </div>
+	<div id ='scaleDiv'> </div>	
+	<div id ='queryDiv'> </div>
+	<div id ='measurelineDiv'></div>
+	<div id ='measureareaDiv'></div>
+	<div id ='popupDiv'> </div>
+	<div id="mouseDiv" class="esri-widget"></div>
+	<div id="btn_div">
+    <div id="legendDiv" class = "esri-widget">	
+	<img id = 'legend' src="images/legend.PNG" style="max-width:330%;" alt=""/></p>
+	<img id = 'legend' src="images/blanco.PNG" style="max-width:200%;" alt=""/></p>
+   <p> <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_de_la_UMSNH.svg" style="max-width:100%;" class="hover"/>
+				
+	<div id="btn_logo" class ="esri-widget btnWidget">
+	
+	</div>​
+	</div>
+    <div id="topbar">	
+	<div id = "homeDiv">
+	  <button
+		class="action-button esri-icon-home"
+		id="homeButton"
+		type="button"
+		title="Default Extent"
+	  ></button>    
+	 </div>	
+      <button
+        class="action-button esri-icon-basemap"
+        id="basemapButton"
+        type="button"
+        title="Basemaps"
+      ></button>	  
+	  <button
+        class="action-button esri-icon-measure-line"
+        id="distanceButton"
+        type="button"
+        title="Measure distance between two or more points"
+      ></button>
+      <button
+        class="action-button esri-icon-printer"
+        id="printerButton"
+        type="button"
+        title="Export Map to PDF"
+      ></button>
+    </div>			
+    </body>
+</html>
+
+
+
+
+
+
+
